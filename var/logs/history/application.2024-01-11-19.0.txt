@@ -1,0 +1,911 @@
+19:02:10.392 [HikariPool-1 housekeeper] WARN  [bucketName: ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m40s472ms).
+19:02:10.405 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:02:10.392 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+19:02:10.392 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+19:02:10.414 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.414 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.414 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Client requested disconnect from node 2147482646
+19:02:10.414 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Client requested disconnect from node 2147482646
+19:02:10.430 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.430 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+19:02:10.430 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.431 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.431 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+19:02:10.431 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.535 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.537 [SpringApplicationShutdownHook] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Shutting down: BucketCreateResponseConsumer
+19:02:10.538 [SpringApplicationShutdownHook] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Shutting down KafkaMsgConsumer for owner: BucketCreateResponseConsumer and threadNumber:1
+19:02:10.539 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:02:10.544 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:02:10.544 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:02:10.544 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Attempt to heartbeat with Generation{generationId=45, memberId='SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c-4ba9a6f7-fd29-4df7-8881-f1b2d1cf4c4d', protocol='range'} and group instance id Optional[SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c] failed due to UNKNOWN_MEMBER_ID, resetting generation
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Attempt to heartbeat with Generation{generationId=45, memberId='SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340-760f5a56-fbc0-4c45-ac57-0686236117d7', protocol='range'} and group instance id Optional[SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340] failed due to UNKNOWN_MEMBER_ID, resetting generation
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Resetting generation and member id due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Resetting generation and member id due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Request joining group due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] Request joining group due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Failing OffsetCommit request since the consumer is not part of an active group
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55a1b0ac-db21-4f1c-b941-2a997d5e2c4c, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets failed: Offset commit cannot be completed since the consumer is not part of an active group for auto partition assignment; it is likely that the consumer was kicked out of the group.. Will continue to join group.
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Giving away all assigned partitions as lost since generation/memberID has been reset,indicating that consumer is in old state or no longer part of the group
+19:02:10.576 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Lost previously assigned partitions bucket-create-request-0
+19:02:10.577 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:02:10.667 [BucketCreateResponseConsumer-bucket-create-request-2] WARN  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets {bucket-create-request-0=OffsetAndMetadata{offset=44, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer is not part of an active group for auto partition assignment; it is likely that the consumer was kicked out of the group.
+19:02:10.793 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Offset commit failed on partition bucket-create-request-0 at offset 41: The coordinator is not aware of this member.
+19:02:10.793 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] OffsetCommit failed with Generation{generationId=45, memberId='SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340-760f5a56-fbc0-4c45-ac57-0686236117d7', protocol='range'}: The coordinator is not aware of this member.
+19:02:10.793 [BucketCreateResponseConsumer-bucket-create-request-2] WARN  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator0619a051-e22d-43cf-b186-2c4f8da0b340, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets {bucket-create-request-0=OffsetAndMetadata{offset=41, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer member's generation is already stale, meaning it has already participated another rebalance and got a new generation. You can try completing the rebalance by calling poll() and then retry commit again
+19:04:38.712 [background-preinit] INFO  [bucketName: ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+19:04:38.744 [main] INFO  [bucketName: ] com.github.senocak.AuthAppKt - Starting AuthAppKt using Java 17.0.8 with PID 44875 (/Users/tcasenocak/Desktop/github/BookStore-Kotlin-Typescript/spring-kotlin-auth/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/BookStore-Kotlin-Typescript/spring-kotlin-auth)
+19:04:38.744 [main] INFO  [bucketName: ] com.github.senocak.AuthAppKt - No active profile set, falling back to 1 default profile: "default"
+19:04:39.933 [main] INFO  [bucketName: ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:04:39.999 [main] INFO  [bucketName: ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+19:04:40.554 [main] INFO  [bucketName: ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+19:04:40.560 [main] INFO  [bucketName: ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+19:04:40.561 [main] INFO  [bucketName: ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:04:40.561 [main] INFO  [bucketName: ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+19:04:40.617 [main] INFO  [bucketName: ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:04:40.618 [main] INFO  [bucketName: ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1842 ms
+19:04:40.848 [main] INFO  [bucketName: ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:04:40.895 [main] INFO  [bucketName: ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+19:04:40.916 [main] INFO  [bucketName: ] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+19:04:41.051 [main] INFO  [bucketName: ] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:04:41.070 [main] INFO  [bucketName: ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:04:41.184 [main] INFO  [bucketName: ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:04:41.248 [main] WARN  [bucketName: ] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+19:04:41.829 [main] INFO  [bucketName: ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+19:04:41.914 [main] INFO  [bucketName: ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:04:43.096 [main] WARN  [bucketName: ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:04:43.462 [main] INFO  [bucketName: ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+19:04:43.523 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/api/v1/auth/**']
+19:04:43.523 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/api/v1/swagger/**']
+19:04:43.523 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/actuator**/**']
+19:04:43.523 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/swagger**/**']
+19:04:43.523 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+19:04:43.531 [main] INFO  [bucketName: ] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@730c4dfd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@736905fe, org.springframework.security.web.context.SecurityContextHolderFilter@2b1aa390, org.springframework.security.web.header.HeaderWriterFilter@502326b3, org.springframework.web.filter.CorsFilter@1bb509a6, org.springframework.security.web.authentication.logout.LogoutFilter@38067d41, com.github.senocak.security.JwtAuthenticationFilter@36e6e59f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76296c86, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@796affb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@280d1d8d, org.springframework.security.web.session.SessionManagementFilter@60610a2b, org.springframework.security.web.access.ExceptionTranslationFilter@7231c423, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c697ca0]
+19:04:43.614 [main] INFO  [bucketName: ] c.g.s.c.AppConfig$$SpringCGLIB$$0 - Core pool size: 10, max pool size: 10000,keepAliveSeconds: 60, queueCapacity: -1,queueSize: 0
+19:04:44.059 [main] INFO  [bucketName: ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+19:04:44.068 [main] INFO  [bucketName: ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+19:04:44.069 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumer Topic: bucket-create-request starting
+19:04:44.069 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Create Consumer Config >> Properties object:{key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, max.poll.records=1, group.instance.id=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, group.id=AuthServer, bootstrap.servers=localhost:9092, auto.commit.interval.ms=100, fetch.max.bytes=10485760, client.id=AuthServer}
+19:04:44.081 [main] INFO  [bucketName: ] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = AuthServer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 10485760
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = AuthServer
+	group.instance.id = SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:04:44.138 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:04:44.138 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:04:44.138 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1704989084138
+19:04:44.139 [main] INFO  [bucketName: ] o.a.k.clients.consumer.KafkaConsumer - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Subscribed to topic(s): bucket-create-request
+19:04:44.153 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumer started for topic name:bucket-create-request with thread: BucketCreateResponseConsumer-bucket-create-request-1
+19:04:44.153 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Create Consumer Config >> Properties object:{key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, max.poll.records=1, group.instance.id=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, group.id=AuthServer, bootstrap.servers=localhost:9092, auto.commit.interval.ms=100, fetch.max.bytes=10485760, client.id=AuthServer}
+19:04:44.153 [main] INFO  [bucketName: ] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = AuthServer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 10485760
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = AuthServer
+	group.instance.id = SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:04:44.153 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - KafkaConsumer Thread-1 is running for BucketCreateResponseConsumer
+19:04:44.155 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:04:44.156 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:04:44.156 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1704989084155
+19:04:44.157 [main] WARN  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.consumer:type=app-info,id=AuthServer
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1865)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:960)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:895)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:523)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:64)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:772)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:671)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:652)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:632)
+	at com.github.senocak.kafka.consumer.AbstractKafkaConsumer.init(AbstractKafkaConsumer.kt:52)
+	at com.github.senocak.kafka.consumer.BucketCreateResponseConsumer.start(BucketCreateResponseConsumer.kt:20)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:284)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:467)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:256)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:979)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.github.senocak.AuthAppKt.main(AuthApp.kt:13)
+19:04:44.158 [main] INFO  [bucketName: ] o.a.k.clients.consumer.KafkaConsumer - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Subscribed to topic(s): bucket-create-request
+19:04:44.158 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumer started for topic name:bucket-create-request with thread: BucketCreateResponseConsumer-bucket-create-request-2
+19:04:44.158 [main] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - initializing KafkaProducer: Topic Name: bucket-create-request
+19:04:44.158 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - KafkaConsumer Thread-2 is running for BucketCreateResponseConsumer
+19:04:44.162 [main] INFO  [bucketName: ] o.a.k.c.producer.ProducerConfig - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+19:04:44.162 [main] INFO  [bucketName: ] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+19:04:44.169 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:04:44.169 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:04:44.169 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1704989084169
+19:04:44.169 [main] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - initialized KafkaProducer: Topic Name: bucket-create-request
+19:04:44.181 [main] INFO  [bucketName: ] com.github.senocak.AuthAppKt - Started AuthAppKt in 5.685 seconds (process running for 6.362)
+19:04:44.185 [main] INFO  [bucketName: ] com.github.senocak.domain.Listener - Time: 5
+19:04:44.276 [main] INFO  [bucketName: ] org.hibernate.SQL_SLOW - Slow query took 27 milliseconds [/* <criteria> */ select r1_0.id,r1_0.created_at,r1_0.name,r1_0.updated_at from roles r1_0]
+19:04:44.326 [kafka-producer-network-thread | producer-1] INFO  [bucketName: ] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: jXkXQ6ncQhuA24ujfMha2g
+19:04:44.326 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] org.apache.kafka.clients.Metadata - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Cluster ID: jXkXQ6ncQhuA24ujfMha2g
+19:04:44.327 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] org.apache.kafka.clients.Metadata - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Cluster ID: jXkXQ6ncQhuA24ujfMha2g
+19:04:44.327 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:04:44.327 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:04:44.330 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:04:44.330 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:04:44.572 [pool-5-thread-1] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - Kafka message produced. message: ProducerRecord(topic=bucket-create-request, partition=null, headers=RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = true), key=AuthServer, value={"action":"MAKE_BUCKET","value":"4889d143-7df6-4feb-b0af-e82748222ea7","createdTime":1704989084457}, timestamp=null)
+19:04:44.581 [pool-6-thread-1] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - Kafka message produced. message: ProducerRecord(topic=bucket-create-request, partition=null, headers=RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = true), key=AuthServer, value={"action":"MAKE_BUCKET","value":"6d87ff34-6c13-4074-82de-38072fe2fd2e","createdTime":1704989084571}, timestamp=null)
+19:04:44.587 [RMI TCP Connection(10)-192.168.1.20] INFO  [bucketName: ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:04:44.606 [main] INFO  [bucketName: ] com.github.senocak.domain.Listener - [ApplicationReadyEvent]: db migrated.
+19:04:56.826 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Successfully joined group with generation Generation{generationId=49, memberId='SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c-0265a34f-7a07-46ce-8492-5ddafdafade4', protocol='range'}
+19:04:56.826 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Successfully joined group with generation Generation{generationId=49, memberId='SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b-d481678b-3663-4368-8c57-09a4209377ec', protocol='range'}
+19:04:56.835 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Finished assignment for group at generation 49: {SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b-d481678b-3663-4368-8c57-09a4209377ec=Assignment(partitions=[bucket-create-request-0]), SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c-0265a34f-7a07-46ce-8492-5ddafdafade4=Assignment(partitions=[])}
+19:04:56.860 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Successfully synced group in generation Generation{generationId=49, memberId='SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b-d481678b-3663-4368-8c57-09a4209377ec', protocol='range'}
+19:04:56.861 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Notifying assignor about the new Assignment(partitions=[bucket-create-request-0])
+19:04:56.861 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Successfully synced group in generation Generation{generationId=49, memberId='SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c-0265a34f-7a07-46ce-8492-5ddafdafade4', protocol='range'}
+19:04:56.862 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Notifying assignor about the new Assignment(partitions=[])
+19:04:56.862 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Adding newly assigned partitions: 
+19:04:56.863 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Adding newly assigned partitions: bucket-create-request-0
+19:04:56.905 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Setting offset for partition bucket-create-request-0 to the committed offset FetchPosition{offset=40, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+19:07:04.814 [HikariPool-1 housekeeper] WARN  [bucketName: ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m23s525ms).
+19:07:04.814 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+19:07:04.814 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted.
+19:07:04.816 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.816 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.822 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Client requested disconnect from node 2147482646
+19:07:04.822 [kafka-coordinator-heartbeat-thread | AuthServer] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Client requested disconnect from node 2147482646
+19:07:04.854 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer -  
+                        consumerRecord.headers. RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = false) 
+                        key: AuthServer 
+                        value: {"action":"MAKE_BUCKET","value":"67595ade-fe73-41ba-b70a-bd22800a1a0f","createdTime":1704988642749} 
+                        partition: 0 
+                        topic: bucket-create-request 
+                        offset: 40
+                    
+19:07:04.855 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Time taken: 1 milliseconds
+19:07:04.865 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.865 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+19:07:04.865 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.868 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.868 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Group coordinator localhost:9092 (id: 2147482646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted.
+19:07:04.868 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Requesting disconnect from last known coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.881 [pool-2-thread-1] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumed message from Topic: bucket-create-request. Message: KafkaMessageTemplate(action=MAKE_BUCKET, value=67595ade-fe73-41ba-b70a-bd22800a1a0f), Thread:pool-2-thread-1
+19:07:04.980 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.981 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:04.984 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer -  
+                        consumerRecord.headers. RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = false) 
+                        key: AuthServer 
+                        value: {"action":"MAKE_BUCKET","value":"561d8276-538d-403a-bcd5-57847599f7de","createdTime":1704988642824} 
+                        partition: 0 
+                        topic: bucket-create-request 
+                        offset: 41
+                    
+19:07:04.985 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Time taken: 0 milliseconds
+19:07:04.985 [pool-2-thread-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumed message from Topic: bucket-create-request. Message: KafkaMessageTemplate(action=MAKE_BUCKET, value=561d8276-538d-403a-bcd5-57847599f7de), Thread:pool-2-thread-2
+19:07:04.985 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer -  
+                        consumerRecord.headers. RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = false) 
+                        key: AuthServer 
+                        value: {"action":"MAKE_BUCKET","value":"d87cf2ed-a565-433d-87cb-5254c33799a5","createdTime":1704988743094} 
+                        partition: 0 
+                        topic: bucket-create-request 
+                        offset: 42
+                    
+19:07:04.986 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Time taken: 1 milliseconds
+19:07:04.986 [pool-2-thread-3] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumed message from Topic: bucket-create-request. Message: KafkaMessageTemplate(action=MAKE_BUCKET, value=d87cf2ed-a565-433d-87cb-5254c33799a5), Thread:pool-2-thread-3
+19:07:04.986 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer -  
+                        consumerRecord.headers. RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = false) 
+                        key: AuthServer 
+                        value: {"action":"MAKE_BUCKET","value":"247255ef-fa9c-4f10-aa88-602183bc10cf","createdTime":1704988743234} 
+                        partition: 0 
+                        topic: bucket-create-request 
+                        offset: 43
+                    
+19:07:04.986 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Time taken: 0 milliseconds
+19:07:05.101 [pool-2-thread-4] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumed message from Topic: bucket-create-request. Message: KafkaMessageTemplate(action=MAKE_BUCKET, value=247255ef-fa9c-4f10-aa88-602183bc10cf), Thread:pool-2-thread-4
+19:07:05.104 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer -  
+                        consumerRecord.headers. RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = false) 
+                        key: AuthServer 
+                        value: {"action":"MAKE_BUCKET","value":"4889d143-7df6-4feb-b0af-e82748222ea7","createdTime":1704989084457} 
+                        partition: 0 
+                        topic: bucket-create-request 
+                        offset: 44
+                    
+19:07:05.104 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Time taken: 0 milliseconds
+19:07:05.105 [pool-2-thread-5] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumed message from Topic: bucket-create-request. Message: KafkaMessageTemplate(action=MAKE_BUCKET, value=4889d143-7df6-4feb-b0af-e82748222ea7), Thread:pool-2-thread-5
+19:07:05.105 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer -  
+                        consumerRecord.headers. RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = false) 
+                        key: AuthServer 
+                        value: {"action":"MAKE_BUCKET","value":"6d87ff34-6c13-4074-82de-38072fe2fd2e","createdTime":1704989084571} 
+                        partition: 0 
+                        topic: bucket-create-request 
+                        offset: 45
+                    
+19:07:05.106 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Time taken: 1 milliseconds
+19:07:05.106 [pool-2-thread-6] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumed message from Topic: bucket-create-request. Message: KafkaMessageTemplate(action=MAKE_BUCKET, value=6d87ff34-6c13-4074-82de-38072fe2fd2e), Thread:pool-2-thread-6
+19:07:05.129 [SpringApplicationShutdownHook] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Shutting down: BucketCreateResponseConsumer
+19:07:05.129 [SpringApplicationShutdownHook] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Shutting down KafkaMsgConsumer for owner: BucketCreateResponseConsumer and threadNumber:1
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Attempt to heartbeat with Generation{generationId=49, memberId='SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c-0265a34f-7a07-46ce-8492-5ddafdafade4', protocol='range'} and group instance id Optional[SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c] failed due to UNKNOWN_MEMBER_ID, resetting generation
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Attempt to heartbeat with Generation{generationId=49, memberId='SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b-d481678b-3663-4368-8c57-09a4209377ec', protocol='range'} and group instance id Optional[SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b] failed due to UNKNOWN_MEMBER_ID, resetting generation
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Resetting generation and member id due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] Request joining group due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Resetting generation and member id due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Request joining group due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator57f859e5-c778-401f-ba2a-f2ef273b716c, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Failing OffsetCommit request since the consumer is not part of an active group
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets failed: Offset commit cannot be completed since the consumer is not part of an active group for auto partition assignment; it is likely that the consumer was kicked out of the group.. Will continue to join group.
+19:07:05.174 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Giving away all assigned partitions as lost since generation/memberID has been reset,indicating that consumer is in old state or no longer part of the group
+19:07:05.175 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Lost previously assigned partitions bucket-create-request-0
+19:07:05.175 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:07:05.274 [BucketCreateResponseConsumer-bucket-create-request-2] WARN  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets {bucket-create-request-0=OffsetAndMetadata{offset=46, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer is not part of an active group for auto partition assignment; it is likely that the consumer was kicked out of the group.
+19:07:05.286 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Offset commit failed on partition bucket-create-request-0 at offset 41: The coordinator is not aware of this member.
+19:07:05.286 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] OffsetCommit failed with Generation{generationId=49, memberId='SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b-d481678b-3663-4368-8c57-09a4209377ec', protocol='range'}: The coordinator is not aware of this member.
+19:07:05.286 [BucketCreateResponseConsumer-bucket-create-request-2] WARN  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets {bucket-create-request-0=OffsetAndMetadata{offset=41, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer member's generation is already stale, meaning it has already participated another rebalance and got a new generation. You can try completing the rebalance by calling poll() and then retry commit again
+19:07:05.294 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Offset commit failed on partition bucket-create-request-0 at offset 45: The coordinator is not aware of this member.
+19:07:05.294 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] OffsetCommit failed with Generation{generationId=49, memberId='SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b-d481678b-3663-4368-8c57-09a4209377ec', protocol='range'}: The coordinator is not aware of this member.
+19:07:05.294 [BucketCreateResponseConsumer-bucket-create-request-2] WARN  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator1ce6bcee-acc9-4633-ac8c-5db8ff90d72b, clientId=AuthServer, groupId=AuthServer] Asynchronous auto-commit of offsets {bucket-create-request-0=OffsetAndMetadata{offset=45, leaderEpoch=0, metadata=''}} failed: Offset commit cannot be completed since the consumer member's generation is already stale, meaning it has already participated another rebalance and got a new generation. You can try completing the rebalance by calling poll() and then retry commit again
+19:07:08.416 [background-preinit] INFO  [bucketName: ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+19:07:08.443 [main] INFO  [bucketName: ] com.github.senocak.AuthAppKt - Starting AuthAppKt using Java 17.0.8 with PID 44973 (/Users/tcasenocak/Desktop/github/BookStore-Kotlin-Typescript/spring-kotlin-auth/build/classes/kotlin/main started by tcasenocak in /Users/tcasenocak/Desktop/github/BookStore-Kotlin-Typescript/spring-kotlin-auth)
+19:07:08.443 [main] INFO  [bucketName: ] com.github.senocak.AuthAppKt - No active profile set, falling back to 1 default profile: "default"
+19:07:09.193 [main] INFO  [bucketName: ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:07:09.240 [main] INFO  [bucketName: ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+19:07:09.695 [main] INFO  [bucketName: ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+19:07:09.700 [main] INFO  [bucketName: ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+19:07:09.700 [main] INFO  [bucketName: ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:07:09.700 [main] INFO  [bucketName: ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+19:07:09.730 [main] INFO  [bucketName: ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:07:09.731 [main] INFO  [bucketName: ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1262 ms
+19:07:09.925 [main] INFO  [bucketName: ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:07:09.967 [main] INFO  [bucketName: ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+19:07:09.985 [main] INFO  [bucketName: ] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+19:07:10.131 [main] INFO  [bucketName: ] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+19:07:10.148 [main] INFO  [bucketName: ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:07:10.291 [main] INFO  [bucketName: ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:07:10.350 [main] WARN  [bucketName: ] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+19:07:10.852 [main] INFO  [bucketName: ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+19:07:10.921 [main] INFO  [bucketName: ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:07:11.527 [main] WARN  [bucketName: ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:07:11.809 [main] INFO  [bucketName: ] o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+19:07:11.871 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/api/v1/auth/**']
+19:07:11.871 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/api/v1/swagger/**']
+19:07:11.871 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/actuator**/**']
+19:07:11.871 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Mvc [pattern='/swagger**/**']
+19:07:11.871 [main] DEBUG [bucketName: ] o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+19:07:11.878 [main] INFO  [bucketName: ] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75552781, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1036bb9f, org.springframework.security.web.context.SecurityContextHolderFilter@70201785, org.springframework.security.web.header.HeaderWriterFilter@5435582e, org.springframework.web.filter.CorsFilter@64a0a1c6, org.springframework.security.web.authentication.logout.LogoutFilter@7e772d11, com.github.senocak.security.JwtAuthenticationFilter@6b438782, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42cf08a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35daccb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62df1f0e, org.springframework.security.web.session.SessionManagementFilter@185b998d, org.springframework.security.web.access.ExceptionTranslationFilter@455082d2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45ec6bb3]
+19:07:11.953 [main] INFO  [bucketName: ] c.g.s.c.AppConfig$$SpringCGLIB$$0 - Core pool size: 10, max pool size: 10000,keepAliveSeconds: 60, queueCapacity: -1,queueSize: 0
+19:07:12.352 [main] INFO  [bucketName: ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+19:07:12.362 [main] INFO  [bucketName: ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+19:07:12.363 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumer Topic: bucket-create-request starting
+19:07:12.363 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Create Consumer Config >> Properties object:{key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, max.poll.records=1, group.instance.id=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, group.id=AuthServer, bootstrap.servers=localhost:9092, auto.commit.interval.ms=100, fetch.max.bytes=10485760, client.id=AuthServer}
+19:07:12.375 [main] INFO  [bucketName: ] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = AuthServer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 10485760
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = AuthServer
+	group.instance.id = SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:07:12.426 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:07:12.426 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:07:12.426 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1704989232425
+19:07:12.427 [main] INFO  [bucketName: ] o.a.k.clients.consumer.KafkaConsumer - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Subscribed to topic(s): bucket-create-request
+19:07:12.446 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumer started for topic name:bucket-create-request with thread: BucketCreateResponseConsumer-bucket-create-request-1
+19:07:12.446 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Create Consumer Config >> Properties object:{key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, max.poll.records=1, group.instance.id=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, group.id=AuthServer, bootstrap.servers=localhost:9092, auto.commit.interval.ms=100, fetch.max.bytes=10485760, client.id=AuthServer}
+19:07:12.446 [main] INFO  [bucketName: ] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = AuthServer
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 10485760
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = AuthServer
+	group.instance.id = SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:07:12.446 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - KafkaConsumer Thread-1 is running for BucketCreateResponseConsumer
+19:07:12.448 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:07:12.450 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:07:12.450 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1704989232448
+19:07:12.450 [main] WARN  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.consumer:type=app-info,id=AuthServer
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1865)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:960)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:895)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:523)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:64)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:772)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:671)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:652)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:632)
+	at com.github.senocak.kafka.consumer.AbstractKafkaConsumer.init(AbstractKafkaConsumer.kt:52)
+	at com.github.senocak.kafka.consumer.BucketCreateResponseConsumer.start(BucketCreateResponseConsumer.kt:20)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:284)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:467)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:256)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:979)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.github.senocak.AuthAppKt.main(AuthApp.kt:13)
+19:07:12.451 [main] INFO  [bucketName: ] o.a.k.clients.consumer.KafkaConsumer - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Subscribed to topic(s): bucket-create-request
+19:07:12.451 [main] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Consumer started for topic name:bucket-create-request with thread: BucketCreateResponseConsumer-bucket-create-request-2
+19:07:12.451 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - KafkaConsumer Thread-2 is running for BucketCreateResponseConsumer
+19:07:12.451 [main] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - initializing KafkaProducer: Topic Name: bucket-create-request
+19:07:12.456 [main] INFO  [bucketName: ] o.a.k.c.producer.ProducerConfig - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+19:07:12.456 [main] INFO  [bucketName: ] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+19:07:12.464 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.6.1
+19:07:12.464 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+19:07:12.464 [main] INFO  [bucketName: ] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1704989232464
+19:07:12.464 [main] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - initialized KafkaProducer: Topic Name: bucket-create-request
+19:07:12.477 [main] INFO  [bucketName: ] com.github.senocak.AuthAppKt - Started AuthAppKt in 4.264 seconds (process running for 4.759)
+19:07:12.482 [main] INFO  [bucketName: ] com.github.senocak.domain.Listener - Time: 4
+19:07:12.609 [kafka-producer-network-thread | producer-1] INFO  [bucketName: ] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: jXkXQ6ncQhuA24ujfMha2g
+19:07:12.609 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] org.apache.kafka.clients.Metadata - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Cluster ID: jXkXQ6ncQhuA24ujfMha2g
+19:07:12.609 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] org.apache.kafka.clients.Metadata - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Cluster ID: jXkXQ6ncQhuA24ujfMha2g
+19:07:12.610 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:12.610 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Discovered group coordinator localhost:9092 (id: 2147482646 rack: null)
+19:07:12.613 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:07:12.613 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] (Re-)joining group
+19:07:12.805 [pool-5-thread-1] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - Kafka message produced. message: ProducerRecord(topic=bucket-create-request, partition=null, headers=RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = true), key=AuthServer, value={"action":"MAKE_BUCKET","value":"ce6367f7-a703-4512-b108-f4010a1469d0","createdTime":1704989232710}, timestamp=null)
+19:07:12.812 [pool-6-thread-1] INFO  [bucketName: ] c.g.s.k.p.BucketCreateRequestKafkaProducer - Kafka message produced. message: ProducerRecord(topic=bucket-create-request, partition=null, headers=RecordHeaders(headers = [RecordHeader(key = from, value = [65, 117, 116, 104, 83, 101, 114, 118, 101, 114])], isReadOnly = true), key=AuthServer, value={"action":"MAKE_BUCKET","value":"8eceaed8-6bb2-4b0f-872f-cd3cb50a6268","createdTime":1704989232805}, timestamp=null)
+19:07:12.819 [main] INFO  [bucketName: ] com.github.senocak.domain.Listener - [ApplicationReadyEvent]: db migrated.
+19:07:13.047 [RMI TCP Connection(5)-192.168.1.20] INFO  [bucketName: ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:07:53.380 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Successfully joined group with generation Generation{generationId=52, memberId='SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea-936ddbca-1925-4dbd-b4dc-fc693be284db', protocol='range'}
+19:07:53.380 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Successfully joined group with generation Generation{generationId=52, memberId='SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645-05fd70d3-960a-4b85-aff9-9915ebb500ce', protocol='range'}
+19:07:53.395 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Finished assignment for group at generation 52: {SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea-936ddbca-1925-4dbd-b4dc-fc693be284db=Assignment(partitions=[bucket-create-request-0]), SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645-05fd70d3-960a-4b85-aff9-9915ebb500ce=Assignment(partitions=[])}
+19:07:53.411 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Successfully synced group in generation Generation{generationId=52, memberId='SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea-936ddbca-1925-4dbd-b4dc-fc693be284db', protocol='range'}
+19:07:53.411 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Successfully synced group in generation Generation{generationId=52, memberId='SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645-05fd70d3-960a-4b85-aff9-9915ebb500ce', protocol='range'}
+19:07:53.411 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Notifying assignor about the new Assignment(partitions=[])
+19:07:53.411 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Notifying assignor about the new Assignment(partitions=[bucket-create-request-0])
+19:07:53.411 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Adding newly assigned partitions: 
+19:07:53.414 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Adding newly assigned partitions: bucket-create-request-0
+19:07:53.424 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.a.k.c.c.i.ConsumerCoordinator - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Setting offset for partition bucket-create-request-0 to the committed offset FetchPosition{offset=40, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1001 rack: null)], epoch=0}}
+19:08:13.454 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.265 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.267 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.269 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.271 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.274 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.275 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:08:19.277 [BucketCreateResponseConsumer-bucket-create-request-2] ERROR [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Message consumed by produced service so ignoring...
+19:16:12.612 [BucketCreateResponseConsumer-bucket-create-request-1] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Consumer instanceId=SchedulerCoordinator55e28295-6163-4cc4-b0aa-12499df0c645, clientId=AuthServer, groupId=AuthServer] Node -1 disconnected.
+19:16:12.612 [BucketCreateResponseConsumer-bucket-create-request-2] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Consumer instanceId=SchedulerCoordinator172d54a0-e2fa-4277-8474-99e0ea2a84ea, clientId=AuthServer, groupId=AuthServer] Node -1 disconnected.
+19:16:12.627 [kafka-producer-network-thread | producer-1] INFO  [bucketName: ] o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+19:16:44.314 [SpringApplicationShutdownHook] INFO  [bucketName: ] c.g.s.k.c.BucketCreateResponseConsumer - Shutting down: BucketCreateResponseConsumer
+19:16:44.316 [SpringApplicationShutdownHook] INFO  [bucketName: ] c.g.s.k.consumer.KafkaMsgConsumer - Shutting down KafkaMsgConsumer for owner: BucketCreateResponseConsumer and threadNumber:1
