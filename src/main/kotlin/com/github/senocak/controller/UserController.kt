@@ -1,17 +1,13 @@
 package com.github.senocak.controller
 
-import com.github.senocak.domain.Document
-import com.github.senocak.domain.DocumentUploadEvent
 import com.github.senocak.domain.User
 import com.github.senocak.domain.dto.ExceptionDto
-import com.github.senocak.domain.dto.FileResponse
 import com.github.senocak.domain.dto.PaginationCriteria
 import com.github.senocak.domain.dto.UpdateUserDto
 import com.github.senocak.domain.dto.UserPaginationDTO
 import com.github.senocak.domain.dto.UserResponse
 import com.github.senocak.exception.ServerException
 import com.github.senocak.security.Authorize
-import com.github.senocak.service.DocumentService
 import com.github.senocak.service.UserService
 import com.github.senocak.util.AppConstants.ADMIN
 import com.github.senocak.util.AppConstants.USER
@@ -30,23 +26,17 @@ import io.swagger.v3.oas.annotations.tags.Tag
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.validation.constraints.Pattern
 import org.slf4j.Logger
-import org.springframework.context.ApplicationEventPublisher
 import org.springframework.http.HttpStatus
-import org.springframework.http.HttpStatusCode
-import org.springframework.http.ResponseEntity
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.validation.BindingResult
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PatchMapping
-import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.client.RestTemplate
-import org.springframework.web.client.postForEntity
-import org.springframework.web.multipart.MultipartFile
 
 @Validated
 @RestController
@@ -56,8 +46,6 @@ import org.springframework.web.multipart.MultipartFile
 class UserController(
     private val userService: UserService,
     private val passwordEncoder: PasswordEncoder,
-    private val documentService: DocumentService,
-    private val eventPublisher: ApplicationEventPublisher,
     private val restTemplate: RestTemplate
 ): BaseController() {
     private val log: Logger by logger()
@@ -168,52 +156,6 @@ class UserController(
             user.password = passwordEncoder.encode(password)
         }
         return userService.save(user = user).convertEntityToDto(roles = true)
-    }
-
-    @PostMapping("/document")
-    fun handleFileUpload(
-        @RequestParam("file") file: MultipartFile,
-    ): FileResponse {
-        val loggedInUser: User = userService.loggedInUser
-        val uploadFileForBucket: ResponseEntity<FileResponse> = restTemplate.postForEntity<FileResponse>("http://localhost:8085/buckets/${loggedInUser.id}/files", file)
-        when {
-            uploadFileForBucket.statusCode.is4xxClientError -> {
-                "4xx Error occured"
-                    .apply { log.error(this) }
-                    .run { throw ServerException(omaErrorMessageType = OmaErrorMessageType.BASIC_INVALID_INPUT,
-                        variables = arrayOf(this), statusCode = HttpStatus.valueOf(uploadFileForBucket.statusCode.value())) }
-            }
-            uploadFileForBucket.statusCode.is5xxServerError -> {
-                "5xx Error occured"
-                    .apply { log.error(this) }
-                    .run { throw ServerException(omaErrorMessageType = OmaErrorMessageType.GENERIC_SERVICE_ERROR,
-                        variables = arrayOf(this), statusCode = HttpStatus.valueOf(uploadFileForBucket.statusCode.value())) }
-            }
-            !uploadFileForBucket.statusCode.is2xxSuccessful -> {
-                "Undefined Error occured"
-                    .apply { log.error(this) }
-                    .run { throw ServerException(omaErrorMessageType = OmaErrorMessageType.GENERIC_SERVICE_ERROR,
-                        variables = arrayOf(this), statusCode = HttpStatus.BAD_REQUEST) }
-            }
-        }
-        val uploadFile: FileResponse = uploadFileForBucket.body
-            ?: "Response is empty"
-                .apply { log.error(this) }
-                .run { throw ServerException(omaErrorMessageType = OmaErrorMessageType.GENERIC_SERVICE_ERROR,
-                    variables = arrayOf(this), statusCode = HttpStatus.valueOf(uploadFileForBucket.statusCode.value())) }
-        val document: Document = Document()
-            .also { it: Document ->
-                it.fileName = uploadFile.fileName
-                it.fileSize = uploadFile.fileSize
-                it.contentType = uploadFile.contentType
-                it.createdAt = uploadFile.createdTime
-                it.user = loggedInUser
-            }
-            .run {
-                documentService.save(document = this)
-            }
-        //eventPublisher.publishEvent(DocumentUploadEvent(source = this, document = document))
-        return uploadFile
     }
 
     companion object {
