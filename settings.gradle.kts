@@ -1,1 +1,1 @@
-rootProject.name = "authapp"
+rootProject.name = "kotlinspringkafka"
