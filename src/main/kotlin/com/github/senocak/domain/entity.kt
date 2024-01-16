@@ -3,6 +3,7 @@ package com.github.senocak.domain
 import com.github.senocak.util.RoleName
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
+import jakarta.persistence.EntityListeners
 import jakarta.persistence.EnumType
 import jakarta.persistence.Enumerated
 import jakarta.persistence.FetchType
@@ -32,6 +33,7 @@ open class BaseDomain(
 @Table(name = "users", uniqueConstraints = [
     UniqueConstraint(columnNames = ["email"])
 ])
+@EntityListeners(value = [UserListener::class])
 class User: BaseDomain() {
     @Column(nullable = false) lateinit var name: String
     @Column(nullable = false) lateinit var email: String
@@ -42,6 +44,8 @@ class User: BaseDomain() {
     )
     @ManyToMany(fetch = FetchType.EAGER)
     var roles: List<Role> = arrayListOf()
+
+    override fun toString(): String = "User(name='$name', email='$email', password=$password, roles=$roles)"
 }
 
 @Entity
